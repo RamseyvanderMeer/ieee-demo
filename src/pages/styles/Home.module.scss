@@ -1,0 +1,115 @@
+.textConainer {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: scroll;
+  color: white;
+}
+.content {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  font-size: min(13vh, 13vw);
+  font-weight: 800;
+  display: inline;
+}
+
+.text {
+  font-weight: 900;
+  font-size: min(14vh, 14vw);
+}
+
+.sectionContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2em;
+  width: 69vw;
+}
+
+.section {
+  width: 15vw;
+  padding: 0.3em 0 0.3em 0;
+  border: 1px solid white;
+  text-align: center;
+  border-radius: 2em;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 2vw;
+  background-color: black;
+  transition: ease-in-out;
+  transition-duration: 0.3s;
+}
+
+.section:hover {
+  background-color: white;
+  color: black;
+  font-weight: 800;
+}
+
+@media only screen and (max-width: 600px) {
+  .textConainer {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: scroll;
+    color: white;
+  }
+  .content {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-size: min(14vh, 14vw);
+    font-weight: 800;
+    display: inline;
+  }
+
+  .text {
+    font-weight: 900;
+    font-size: min(15vh, 13vw);
+  }
+
+  .sectionContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2em;
+    width: 50vw;
+  }
+
+  .section {
+    width: 50vw;
+    padding: 0.2em 0 0.2em 0;
+    margin: 0.2em 0 0.2em 0;
+    border: 1px solid white;
+    text-align: center;
+    border-radius: 2em;
+    font-weight: 600;
+    font-size: 5vw;
+  }
+
+  .section:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    font-weight: 800;
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+  }
+}
